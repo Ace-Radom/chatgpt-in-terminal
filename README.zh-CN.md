@@ -298,7 +298,7 @@ LANGUAGE=
 
 退出后将显示本次聊天所使用的 tokens 统计
 
-> 目前价格为: $0.002 / 1K tokens，免费版速率限制为: 20次 / min (`gpt-3.5-turbo`)
+> 目前价格为: $0.0015 / 1K tokens，免费版速率限制为: 20次 / min (`gpt-3.5-turbo`)
 
 ## 依赖
 
@@ -319,6 +319,12 @@ LANGUAGE=
 
 感谢以下参与项目的人：
 <a href="https://github.com/xiaoxx970/chatgpt-in-terminal/graphs/contributors"><img src="https://opencollective.com/chatgpt-in-terminal/contributors.svg?width=890&button=false" /></a>
+
+## 可能的问题
+
+- tiktoken库可能报告如下错误：`ValueError: not enough values to unpack (expected 2, got 1)`
+
+  这是tiktoken库的一个bug (或是未解决的一个问题)。如果你遇到了这个错误，可以尝试将tiktoken升级至0.4.0版本，或是设置 `TIKTOKEN_CACHE_DIR=''` 环境变量。
 
 ## 项目结构
 

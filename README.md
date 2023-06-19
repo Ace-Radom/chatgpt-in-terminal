@@ -295,7 +295,7 @@ You can also use `Ctrl-D` or `/exit` to exit immediately.
 
 Upon exit, the token count for the chat session will be displayed.
 
-> Current price: $0.002 / 1K tokens, Free Edition rate limit: 20 requests / min (`gpt-3.5-turbo`)
+> Current price: $0.0015 / 1K tokens, Free Edition rate limit: 20 requests / min (`gpt-3.5-turbo`)
 
 ## Dependencies
 
@@ -316,6 +316,14 @@ Feel free to dive in! [Open an issue](https://github.com/xiaoxx970/chatgpt-in-te
 
 This project exists thanks to all the people who contribute. 
 <a href="https://github.com/xiaoxx970/chatgpt-in-terminal/graphs/contributors"><img src="https://opencollective.com/chatgpt-in-terminal/contributors.svg?width=890&button=false" /></a>
+
+## Possible Problems
+
+- tiktoken module may give an error: `ValueError: not enough values to unpack (expected 2, got 1)`
+  
+  This is a bug / unsolved problem of tiktoken library. If this error occurs, try to update tiktoken module to 0.4.0, or set the environment variable `TIKTOKEN_CACHE_DIR=''`.
+
+
 
 ## Project Structure
 
