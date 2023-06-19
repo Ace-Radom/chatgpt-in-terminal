@@ -321,7 +321,7 @@ This project exists thanks to all the people who contribute.
 
 - tiktoken module may give an error: `ValueError: not enough values to unpack (expected 2, got 1)`
   
-  This is a bug / unsolved problem of tiktoken library. If this error occurs, try to update tiktoken module to 0.4.0, or set the environment variable `TIKTOKEN_CACHE_DIR=''`.
+  This is a bug / unsolved problem of tiktoken library. If this error occurs, try to update tiktoken module to 0.4.0, or set the environment variable `TIKTOKEN_CACHE_DIR=''`. (#57)
 
 
 

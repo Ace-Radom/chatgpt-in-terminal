@@ -324,7 +324,7 @@ LANGUAGE=
 
 - tiktoken库可能报告如下错误：`ValueError: not enough values to unpack (expected 2, got 1)`
 
-  这是tiktoken库的一个bug (或是未解决的一个问题)。如果你遇到了这个错误，可以尝试将tiktoken升级至0.4.0版本，或是设置 `TIKTOKEN_CACHE_DIR=''` 环境变量。
+  这是tiktoken库的一个bug (或是未解决的一个问题)。如果你遇到了这个错误，可以尝试将tiktoken升级至0.4.0版本，或是设置 `TIKTOKEN_CACHE_DIR=''` 环境变量。(#57)
 
 ## 项目结构
 
